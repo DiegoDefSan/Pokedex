@@ -125,6 +125,14 @@ function setAbilities (pokemon) {
       abl.style.border = "solid 1px black";
       abl.style.borderRadius = '10px';
   }
+  //Añadido recién - Borra habilidades de carta anterior
+  for (let i=pokemon.abilities.length; i<4; i++) {
+      let ub = `a${i+1}`;
+      let abl = document.getElementById(ub);
+      
+      abl.innerHTML = '';
+      abl.style.border = "none";
+  }
 }
     //Función para dibujar el fondo de la carta conforme el tipo del pokemon
 function setBGImage (p1, fondo) {
@@ -177,7 +185,7 @@ function capitalize(str) {
 }
     //Función par generar un número random
 function getRandom() {
-return Math.floor(Math.random() * (152 - 1)) + 1;
+  return Math.floor(Math.random() * (152 - 1)) + 1;
 }
     //Función para randomizar una carta
 function randomCard () {

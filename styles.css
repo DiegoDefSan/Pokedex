@@ -93,7 +93,7 @@ body {
 }
 .tilt-box-wrap:hover {
     transition: all 0.3s linear;
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 .t_over {
     width: 33.333%;
